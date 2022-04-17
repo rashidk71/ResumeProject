@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<title>{% block title %}Contact{% endblock title %}</title>
+{% block content %}
+<div class="container mt-3">
+    <h1 class="text-warning border-bottom mb-5">CONTACT US</h1>
+    <div class="row text-white">
+        <p class="mx-auto">
+            Do You Have any questions? Please do not hesitate to contact.I will come 
+            back to you within a matter of hours to help you.
+        </p>
+        <div class="col-sm-9 mb-5">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Your Name*</label>
+                        <input type="text" class="form-control" id="inputName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Your Email*</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSubject">Your Subject</label>
+                    <input type="text" class="form-control" id="inputSubject " required>
+                </div>
+                <div class="form-group">
+                    <label for="inputTextarea">Your Message*</label>
+                    <textarea class="form-control" id="inputTextarea" rows="3" required></textarea>
+                </div>
+                <button class="btn-primary btn my-2">Send</button>
+
+            </form>
+        </div>
+        <div class="col-sm-3 mb-5 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-map-marker-alt fa-2x i-color mt-2"></i>
+                    <p>Wadala,Mumbai,India</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone fa-2x i-color mt-4"></i>
+                    <p>+91-8080XXXXXX</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope fa-2x i-color mt-4"></i>
+                    <p>rk706399@gmail.com</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="" target="_blank" class="mr-3"><i class="fab fa-twitter i-color fa-2x"></i></a>
+        <a href="" target="_blank" class="mr-3"><i class="fab fa-facebook i-color fa-2x"></i></a>
+        <a href="" target="_blank" class="mr-3" ><i class="fab fa-instagram i-color fa-2x"></i></a>
+        <a href="" target="_blank"><i class="fab fa-dribbble i-color fa-2x"></i></a>
+    </div>
+</div>
+{% endblock content %}
